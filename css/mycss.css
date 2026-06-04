@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;600&display=swap');
+
+:root {
+    --primary: #1565c0;
+    --accent: #ff6f00;
+    --dark: #1a237e;
+    --light: #f5f7ff;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #fff;
+    color: #212529;
+}
+
+.navbar {
+    background-color: var(--dark) !important;
+    padding: 14px 0;
+}
+
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+    color: #fff !important;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    color: rgba(255,255,255,0.8) !important;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+.nav-link:hover {
+    color: var(--accent) !important;
+}
+
+.hero {
+    background: linear-gradient(rgba(21,37,96,0.65), rgba(21,37,96,0.65)),
+        url('https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=1400') center/cover no-repeat;
+    min-height: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    text-shadow: 0 2px 12px rgba(0,0,0,0.4);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+section {
+    padding: 70px 0;
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: var(--dark);
+    margin-bottom: 36px;
+    text-align: center;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 18px rgba(21,37,96,0.10);
+    transition: transform 0.2s, box-shadow 0.2s;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 30px rgba(21,37,96,0.18);
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.card-title {
+    font-family: 'Playfair Display', serif;
+    color: var(--dark);
+}
+
+.table-section {
+    background-color: var(--light);
+}
+
+.table thead {
+    background-color: var(--primary);
+    color: #fff;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: rgba(21,37,96,0.05);
+}
+
+figure figcaption {
+    text-align: center;
+    font-style: italic;
+    color: #6c757d;
+    margin-top: 6px;
+}
+
+footer {
+    background-color: var(--dark);
+    color: #b0bec5;
+    padding: 36px 0;
+    text-align: center;
+}
+
+footer a {
+    color: #90caf9;
+    text-decoration: none;
+}
+
+.badge-accent {
+    background-color: var(--accent);
+    color: #fff;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
